@@ -1,0 +1,144 @@
+// Fixed Header through JavaScript
+#header.fixed-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  height: 9vh;
+  transition: all 0.5s ease-in-out;
+  color: black;
+  z-index: 10;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  border-bottom: 2px solid white;
+}
+// ----- -----
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  position: relative;
+
+  & .nav-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+
+    &:hover {
+      color:  #335577;
+      letter-spacing: 3px;
+    }
+  }
+
+  & .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  & .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 35px;
+    list-style: none;
+    position: relative;
+
+    & .nav-item .nav-link {  
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;  
+      padding: 10px 15px;
+      transition: all 0.5s;
+      
+      &:hover {
+        border: 3px solid #335577;
+        border-radius: 3px;
+        letter-spacing: 3px;
+        padding: 10px 15px;
+      }
+    }
+
+    & .btn-close {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      color: #335577;
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+      text-shadow: 4px 8px 12px;
+
+      & #btn-close {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+    // Mobile Menu
+  & .burger {
+    display: none;
+
+    #mobile-menu {
+      color: white;
+      font-size: 2.3rem;
+      text-decoration: none;
+      cursor: pointer;
+      z-index: 15;
+    }
+  }
+}
+
+// Title Content
+.title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+
+  & .main-title, .subtitle {
+    color: white;
+  }
+
+  & .main-title {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 10px;
+    padding-top: 250px;
+  }
+
+  & .subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+// Btn Click Bottom
+.btn-click-bottom {
+  text-align: center;
+  width: 100px;
+  color: white;
+  background: #335577;
+  padding: 10px 15px;
+  font-size: 2rem;
+  display: block;
+  margin: 360px auto 0 auto;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+    border-radius: 5px;
+    border: 1px solid white;
+    background: transparent;
+  }
+}

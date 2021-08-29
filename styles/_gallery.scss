@@ -1,0 +1,134 @@
+.gallery-container {
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
+  padding: 50px 0;
+}
+
+.gallery-content {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  text-align: center;
+  margin: auto;
+
+  & .gallery-title {
+    color: #335577;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+
+  & .gallery-subtitle {
+    line-height: 1.4;
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+  }
+}
+
+.test {
+  position: relative;
+
+  & .gallery-slider {
+    display: flex;
+    column-gap: 10px;
+    transition: all 0.9s;
+    width: 3120px;
+  
+    & .gallery-image {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.6s;
+  
+      & img {
+        width: 300px;
+        height: 400px;
+      }
+  
+      & .overview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: black;
+        background-color: #b8c6db;
+        background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+        transform: translateY(100%);
+        opacity: 0;
+        transition: all 0.5s;
+      }
+  
+      &:hover .overview {
+        transform: translateY(0);
+        opacity: 0.65;
+      }
+    }
+  }
+
+  & .btn-container {
+    display: flex;
+    justify-content: space-between;
+
+    & .btn-left {
+      cursor: pointer;
+      color: #335577;
+      font-size: 2.5rem;
+      background: none;
+      border: none;
+      position: absolute;
+      top: 45%;
+      left: 1rem;
+      animation: btnAnime 1.3s;
+      animation-iteration-count: infinite;
+      transition: all 0.5s;
+
+      @keyframes btnAnime {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.3);
+        }
+      }
+    }
+
+    & .btn-right {
+      cursor: pointer;
+      color: #335577;
+      font-size: 2.5rem;
+      background: none;
+      border: none;
+      position: absolute;
+      top: 45%;
+      right: 1rem;
+      animation: btnAnime 1.3s;
+      animation-iteration-count: infinite;
+      transition: all 0.5s;
+
+      @keyframes btnAnime {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}
+
+
+

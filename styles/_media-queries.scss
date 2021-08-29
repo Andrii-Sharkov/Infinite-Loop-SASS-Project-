@@ -1,0 +1,117 @@
+@media screen and (max-width: 1199px) {
+  .header-container,
+  .we-do-container,
+  .testimonials-container,
+  .gallery-container,
+  .contact-us-container {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .nav-bar .burger {
+    display: flex;
+  }
+
+  .nav-bar .nav-menu .nav-list {
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100%;
+    width: 30%;
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    flex-direction: column;
+    row-gap: 15px;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-100%);
+    border-left: 2px solid white;
+  }
+
+  .nav-bar .nav-menu .nav-list.openSideNav {
+    transform: translateY(0%);
+  }
+
+  .btn-close {
+    display: block;
+  }
+
+  .testimonials-slider .testimonials-card {
+    width: 250px;
+  }
+
+  .form-field {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .we-do-features {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-bar .nav-menu .nav-list {
+    width: 100%;
+    border: 2px solid white;
+  }
+
+  .title-content .subtitle {
+    display: none;
+  }
+
+  .we-do-container, 
+  .testimonials-container, 
+  .gallery-container,
+  .contact-us-container {
+    padding: 25px 0;
+  }
+
+  .section-title .we-do-title,
+  .testimonials-content .testimonials-title,
+  .gallery-content .gallery-title,
+  .contact-us-content .contact-us-title  {
+    font-size: 2rem;
+  }
+
+  .section-title .we-do-subtitle,
+  .we-do-features .features .feat-column .feature-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .we-do-features .features .feat-column .feature-title {
+    font-size: 1.8rem;
+  }
+
+  .we-do-features .features .feat-column .btn-learn-more, .we-do-features .features .feat-column .btn-details {
+    font-size: 1.4rem;
+    width: 150px;
+  }
+
+  .gallery-content .gallery-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .form-field .contact-details {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .form-field .form input[type=text],
+  .form-field .form input[type=email],
+  .form-field .form textarea {
+    width: 350px;
+  }
+
+  .form-field .contact-details {
+    margin-left: 0;
+    row-gap: 15px;
+  }
+
+}
